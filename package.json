@@ -1,0 +1,56 @@
+{
+  "author": "geeeger <lph1988520@sina.com>",
+  "description": "只用一个函数调用复制到剪贴板功能",
+  "homepage": "https://github.com/geeeger-pkgs/web-copy.git",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "copy",
+    "utils",
+    "browser"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geeeger-pkgs/web-copy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/geeeger-pkgs/web-copy/issues",
+    "email": "lph1988520@sina.com"
+  },
+  "private": false,
+  "name": "@geeeger/web-copy",
+  "scripts": {
+    "build": "tsc --pretty",
+    "prepare": "npm run build",
+    "test": "jest",
+    "test-ci": "jest --ci --coverage",
+    "format": "prettier --write \"**/*.ts\"  \"!**/lib/**\"",
+    "lint": "eslint \"packages/**/{src,__tests__}/**/*.ts\" -f eslint-formatter-friendly"
+  },
+  "version": "1.0.0",
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.30.0",
+    "@typescript-eslint/parser": "^4.30.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-formatter-friendly": "^7.0.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.1.0",
+    "jest-junit": "^12.2.0",
+    "prettier": "^2.3.2",
+    "ts-jest": "^27.0.5",
+    "typescript": "^4.4.2"
+  },
+  "dependencies": {
+    "clipboard": "^2.0.8"
+  }
+}
